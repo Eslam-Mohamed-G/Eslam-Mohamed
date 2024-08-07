@@ -1,0 +1,506 @@
+
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 19px;
+  font-weight: 300;
+  color: white;
+  position: relative;
+  background-color: black;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+
+#tm-wrap {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  min-height: 100vh;
+}
+
+p {
+  line-height: 1.9;
+  letter-spacing: 1px;
+}
+
+.tm-main-content {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 50px 15px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+
+.tm-site-header {
+  margin: 10px;
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.text-animation{
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 400px;
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid white;
+}
+
+.small-white{
+  position: absolute;
+  right: 0px;
+  bottom: -10px;
+  width: 120px;
+  height: 20px;
+  background-color: white;
+}
+
+.text-animation span{
+  position: relative;
+}
+
+.text-animation span::before{
+  content: "Web Developer";
+  color: white;
+  animation: words 20s infinite;
+}
+
+.text-animation span::after{
+  content: "";
+  background-color: black;
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  margin: 5px;
+  border-left: 3px solid white;
+  right: -8px;
+  animation: cursor .6s infinite, typing 20s steps(14) infinite;
+}
+
+.welcome{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  height: 300px;
+}
+.about-me{
+  width: 75%;
+}
+.my-photo{
+  width: 25%;
+  text-align: center;
+}
+
+.my-photo img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.tm-nav-link {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 165px;
+  height: 165px;
+  text-align: center;
+  border: 1px solid white;
+  cursor: pointer;
+  position: relative;
+}
+
+.tm-nav-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+}
+
+.fa-3x {
+  font-size: 2.5em;
+}
+
+.product {
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.product:hover {
+  background: #2c2a35;
+  color: #a9a9a9;
+}
+
+.tm-nav-icon {
+  display: block;
+  margin-bottom: 25px;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ! ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Expanding Grid Items from Codrops */
+.tm-page-title {
+  font-weight: 300;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  margin: auto;
+  /* border: 1px solid white; */
+}
+.grid__item {
+  margin: 10px;
+}
+.product {
+  position: relative;
+  cursor: pointer;
+}
+
+.product__bg {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+}
+
+.product__bg,
+.product__description {
+  opacity: 0;
+  position: absolute;
+}
+
+.product__description {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.tm-fa-close {
+  font-size: 30px;
+}
+
+
+.details > * {
+  position: relative;
+  opacity: 0;
+}
+
+.details--open {
+  pointer-events: auto;
+  margin: auto;
+}
+
+.details__bg {
+  padding: 50px;
+  transform-origin: 0 0;
+  width: 100%;
+  max-width: 1100px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid white;
+}
+
+.details__bg--down {
+  background: #2c2a35;
+}
+
+
+.details__close {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  border: 0;
+  background: none;
+  margin: 1em;
+  cursor: pointer;
+  font-size: 0.85em;
+  color: white;
+  z-index: 1001;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ! ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* about me*/
+.tm-reverse-sm {
+  flex-direction: row;
+}
+
+.soft{
+  background-color: #000000;
+  margin: 0px 15px 15px 0px;
+  padding: 15px;
+  border: none;
+  font-size: small;
+  font-weight: bold;
+  border-radius: 15px;
+}
+.tool{
+  display: flex;
+}
+.tool ul{
+  /* border: 1px solid white; */
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.tool li{
+  margin: 0px 10px 10px 0px;
+  padding: 0px 10px 10px 0px;
+}
+
+/* my Work */
+.tm-slider-img-link {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.slick-dots li button:before {
+  font-size: 20px;
+  color: white;
+  opacity: 1;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -40px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: deepskyblue;
+}
+
+.tm-img-slider .img-fluid{
+  width: 240px;
+  height: 240px;
+}
+
+/* Contact */
+.form-control {
+  font-size: 1.1rem;
+  border-radius: 0;
+  border: none;
+  background-color: #353541;
+  color: white;
+  padding: 0.75rem;
+}
+
+.form-control:focus {
+  color: #cecece;
+  background-color: #4d4c59;
+  border-color: transparent;
+}
+
+.tm-col-email {
+  padding-left: 0;
+}
+
+.tm-btn-submit {
+  background-color: #006599;
+}
+
+.tm-btn-gray {
+  background-color: #494752;
+  color: white;
+}
+
+.tm-btn-gray:hover {
+  background-color: #77757d;
+  color: white;
+}
+
+.btn {
+  padding: 0.5rem 2.4rem;
+  font-size: 1.2rem;
+  border-radius: 0;
+}
+
+.btn-primary {
+  border-color: transparent;
+}
+
+.btn-primary:hover {
+  background-color: #0e7fb9;
+  border-color: transparent;
+}
+
+a,
+button {
+  transition: all 0.3s ease;
+  margin-right: 50px;
+  color: white;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1400px) {
+  .row {
+    max-width: 1000px;
+  }
+  .grid {
+    justify-content: flex-end;
+    width: 700px;
+    margin-right: 80px;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991px), (max-width: 440px) {
+  .tm-nav-link {
+    width: 145px;
+    height: 145px;
+  }
+}
+
+@media (max-width: 767px) {
+  .row {
+    max-width: 430px;
+    padding: 15px;
+  }
+
+  .grid {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+    margin: 0px;
+  }
+  .welcome{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-me{
+    width: 75%;
+    float: left;
+  }
+  .my-photo{
+    width: 25%;
+  }
+  .details__bg {
+    padding: 20px 20px;
+    width: 420px;
+    margin: 0px;
+  }
+
+  .tm-col-email {
+    padding-left: 15px;
+  }
+  .tm-reverse-sm {
+    flex-direction: column-reverse;
+  }
+  .text-animation{
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 544px) {
+  .tm-main-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid {
+    justify-content: flex-end;
+    padding-right: 15px;
+    width: 400px;
+  }
+  .welcome{
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+  .my-photo{
+    width: 100%;
+  }
+  .details__bg {
+    padding: 20px 20px;
+    width: 420px;
+    margin: 0px;
+  }
+  .slick-dots li button:before {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 419px) {
+  .tm-nav-link {
+    width: 120px;
+    height: 120px;
+  }
+
+  .fa-3x {
+    font-size: 2.2em;
+  }
+}
+
+@keyframes cursor{
+  to{
+      border-left: 2px solid var(--main-color);
+  }
+}
+
+@keyframes words{
+  0%,20%{
+      content: "Frontend Designer";
+  }
+  21%,40%{
+      content: "Web Designer";
+  }
+  41%,60%{
+      content: "Web Developer";
+  }
+  61%,80%{
+      content: "Software Tester";
+  }
+  81%,100%{
+      content: "UI / UX Designer";
+  }
+
+}
+
+@keyframes typing{
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{width: 0;}
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{width: calc(100% + 8px);}
+}
+
