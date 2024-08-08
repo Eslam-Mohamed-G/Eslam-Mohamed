@@ -378,26 +378,9 @@ p:last-child {
   margin-bottom: 0;
 }
 
-@media (max-width: 1400px) {
-  .row {
-    max-width: 1000px;
-  }
-  .grid {
-    justify-content: flex-end;
-    width: 700px;
-    margin-right: 80px;
-    padding: 0px;
-  }
-}
 
-@media (min-width: 767px) and (max-width: 991px), (max-width: 440px) {
-  .tm-nav-link {
-    width: 145px;
-    height: 145px;
-  }
-}
 
-@media (max-width: 767px) {
+@media (max-width: 544px) {
   .row {
     max-width: 430px;
     padding: 15px;
@@ -455,12 +438,7 @@ p:last-child {
     font-weight: 200;
   }
 p{font-size: 15px;}
-h1 {
-  font-size: 2.4rem;
-}
-}
-
-@media (max-width: 544px) {
+h1 {font-size: 2.4rem;}
   .tm-main-content {
     display: flex;
     flex-direction: column;
