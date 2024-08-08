@@ -272,7 +272,6 @@ p {
   display: flex;
 }
 .tool ul{
-  /* border: 1px solid white; */
   list-style-type: none;
   margin-left: 0px;
   padding-left: 0px;
@@ -309,7 +308,7 @@ p {
   color: deepskyblue;
 }
 
-.tm-img-slider .img-fluid{
+.img-fluid{
   width: 240px;
   height: 240px;
 }
@@ -420,10 +419,10 @@ p:last-child {
     float: left;
   }
   .my-photo{
-    width: 25%;
+    width: 10%;
   }
   .details__bg {
-    padding: 20px 20px;
+    padding: 10px 10px;
     width: 420px;
     margin: 0px;
   }
@@ -431,7 +430,17 @@ p:last-child {
     width: 380px;
     font-size: 20px;
     font-weight: 200;
-    border: 1px solid white;
+  }
+  .tm-img-slider{padding-right: 45px;}
+  .tm-slider-img{
+    width: 120px;
+    height: 120px;
+  }
+  .tm-slider-img-link{
+    width: 120px;
+    height: 120px;
+    padding: 0px;
+    margin: 0px;
   }
 
   .tm-col-email {
@@ -445,6 +454,10 @@ p:last-child {
     font-size: 24px;
     font-weight: 200;
   }
+p{font-size: 15px;}
+h1 {
+  font-size: 2.4rem;
+}
 }
 
 @media (max-width: 544px) {
@@ -454,8 +467,7 @@ p:last-child {
   }
   .grid {
     justify-content: flex-end;
-    padding-right: 15px;
-    width: 400px;
+    width: 390px;
   }
   .welcome{
     height: 100%;
@@ -466,7 +478,7 @@ p:last-child {
   }
   .details__bg {
     padding: 20px 20px;
-    width: 420px;
+    width: 400px;
     margin: 0px;
     font-size: 26px;
     font-weight: 200;
@@ -476,22 +488,6 @@ p:last-child {
   }
 }
 
-@media (max-width: 419px) {
-  .tm-nav-link {
-    width: 120px;
-    height: 120px;
-  }
-
-  .fa-3x {
-    font-size: 2.2em;
-  }
-}
-
-@keyframes cursor{
-  to{
-      border-left: 2px solid var(--main-color);
-  }
-}
 
 @keyframes words{
   0%,20%{
