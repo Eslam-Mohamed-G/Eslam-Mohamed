@@ -409,9 +409,20 @@ p:last-child {
     margin: 0px;
   }
   .tm-site-header{
-    width: 380px;
-    font-size: 20px;
+    width: 330px;
+    font-weight: 600;
+    padding-left: 15px;
+  }
+  .text-animation{
+    padding: 10px 0px;
+    width: 300px;
+    font-size: 22px;
     font-weight: 200;
+  }
+  .small-white{
+    width: 90px;
+    height: 10px;
+    margin: 5px 0px;
   }
   .tm-img-slider{padding-right: 45px;}
   .tm-slider-img{
@@ -431,11 +442,7 @@ p:last-child {
   .tm-reverse-sm {
     flex-direction: column-reverse;
   }
-  .text-animation{
-    width: 350px;
-    font-size: 24px;
-    font-weight: 200;
-  }
+  
   p{font-size: 15px;}
   h1 {font-size: 2.4rem;}
   .tm-main-content {
@@ -443,8 +450,10 @@ p:last-child {
     flex-direction: column;
   }
   .grid {
-    justify-content: flex-end;
-    width: 390px;
+    justify-content: center;
+    width: 350px;
+    font-size: 1rem;
+    font-weight: 600;
   }
   .welcome{
     height: 100%;
@@ -456,12 +465,18 @@ p:last-child {
   .details__bg {
     padding: 20px 20px;
     width: 400px;
-    margin: 0px;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 200;
   }
   .slick-dots li button:before {
     font-size: 15px;
+  }
+  .fa-3x{
+    font-size: 1.4rem;
+  }
+  .tm-nav-link{
+    width: 140px;
+    height: 140px;
   }
 }
 
