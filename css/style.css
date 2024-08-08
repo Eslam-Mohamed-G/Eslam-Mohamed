@@ -382,14 +382,13 @@ p:last-child {
 
 @media (max-width: 544px) {
   .row {
-    max-width: 430px;
-    padding: 15px;
+    max-width: 390px;
+    padding: 10px;
   }
 
   .grid {
     display: flex;
     justify-content: flex-end;
-    padding-right: 15px;
     margin: 0px;
   }
   .welcome{
@@ -406,7 +405,7 @@ p:last-child {
   }
   .details__bg {
     padding: 10px 10px;
-    width: 420px;
+    width: 400px;
     margin: 0px;
   }
   .tm-site-header{
@@ -437,8 +436,8 @@ p:last-child {
     font-size: 24px;
     font-weight: 200;
   }
-p{font-size: 15px;}
-h1 {font-size: 2.4rem;}
+  p{font-size: 15px;}
+  h1 {font-size: 2.4rem;}
   .tm-main-content {
     display: flex;
     flex-direction: column;
