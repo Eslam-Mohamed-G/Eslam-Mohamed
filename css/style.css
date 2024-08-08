@@ -1,4 +1,8 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -60,7 +64,7 @@ p {
 .text-animation{
   font-size: 34px;
   font-weight: 600;
-  min-width: 400px;
+  width: 430px;
   position: relative;
   margin-bottom: 40px;
   padding-bottom: 20px;
@@ -423,6 +427,12 @@ p:last-child {
     width: 420px;
     margin: 0px;
   }
+  .tm-site-header{
+    width: 380px;
+    font-size: 20px;
+    font-weight: 200;
+    border: 1px solid white;
+  }
 
   .tm-col-email {
     padding-left: 15px;
@@ -431,8 +441,9 @@ p:last-child {
     flex-direction: column-reverse;
   }
   .text-animation{
-    font-size: 30px;
-    font-weight: 600;
+    width: 350px;
+    font-size: 24px;
+    font-weight: 200;
   }
 }
 
@@ -457,6 +468,8 @@ p:last-child {
     padding: 20px 20px;
     width: 420px;
     margin: 0px;
+    font-size: 26px;
+    font-weight: 200;
   }
   .slick-dots li button:before {
     font-size: 15px;
